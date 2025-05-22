@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Compressor JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>File Compressor JavaScript</header>
+    <form id="upload-form">
+      <input type="file" id="file-input" hidden />
+      <div class="upload-box" onclick="document.getElementById('file-input').click()">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Upload Icon" />
+        <p>Browse file to compress</p>
+      </div>
+      <section class="uploaded-area" id="uploaded-area">
+        <!-- File items will be dynamically inserted here -->
+      </section>
+      <button type="button" id="compress-button">Compress & Download</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
